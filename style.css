@@ -1,0 +1,195 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* Nav Styles */
+
+nav{
+    width: 100%;
+    padding: 0.7em;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    list-style-type: none;
+    background-color: black;
+    font-family: 'Noto Sans HK', sans-serif;
+    font-size: clamp(0.8rem, 1.2vw, 1.3rem);
+    z-index: 80;
+}
+
+.nav_list {
+    width: 80%;
+    max-width:1100px ;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+
+}
+
+.nav_sublist {
+    width:100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin: 0 auto;
+    list-style-type: none;
+    justify-content:center;
+    gap: 0.7em;
+    padding:0;
+    text-align: center;
+}
+
+.nav_item {
+    width: 100%;
+}
+
+.nav_link {
+    position: relative;
+    color: #ffeedd;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    animation: color 2s ease-out 100ms;
+    height: 0 auto;
+}
+
+.nav_link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: #ffeedd;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    transition: -webkit-transform 250ms ease-in;
+    transition: transform 250ms ease-in;
+    transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+}
+
+.nav_link:hover::after {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+-webkit-transform-origin: left;
+    transform-origin: left;
+}
+
+.nav_link_btn {
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 100%;
+    color: #030F29;
+    background-color:#FED65C;
+    text-decoration: none;
+    padding: .03em 2em;
+    border-radius: .2em;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav_link_btn:hover {
+    background-color:#FCF6E6;
+    color: #000;
+}
+.nav_btn_mobile {
+    display: none;
+    width: 0;
+}
+
+@media screen and (max-width: 535px) {   
+    
+    nav {
+        padding:0;
+        padding: 0.2em;
+    }
+
+    .nav_btn_mobile {
+        width: 100%;
+        z-index: 2;
+        min-height: 2rem;
+        min-width: 2.3rem;
+        grid-row-gap: 5px;
+        background-color: transparent;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .menu_btn_line {
+        width: 1.5rem;
+        height: 0.20rem;
+        outline-offset: 0px;
+        background-color: #FED65C;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav_btn_mobile.active .bottom_line:last-child {
+        transform: translate3d(0px, -4px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-45deg) skew(0deg, 0deg);
+        transform-style: preserve-3d;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .nav_btn_mobile.active .top_line:first-child {
+        transform: translate3d(0px, 4px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg);
+        transform-style: preserve-3d;
+        transition: all 0.3s ease-in-out;
+    }
+    .nav_sublist {
+        position: fixed;
+        left: -100%;
+        top: 1.5rem;
+        gap:0;
+        flex-direction: column;
+        background-color:#14110F;
+        width: 100%;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav_sublist.active::after {
+        content: url("./resources/img/mobile_menu.svg");
+        position: absolute;
+        left: 64%;
+        top: 47%;
+        width: 20%;
+    }
+
+    .nav_sublist.active::before {
+        content: url("./resources/img/mobile_menu_2.svg");
+        position: absolute;
+        left: 14%;
+        top: 7%;
+        width: 20%;
+    }
+
+    .nav_item {
+        margin: 1rem 0;
+    }
+
+    .nav_sublist.active {
+        left: 0;
+    }
+ 
+}
+
+/* Introduction */
+
+.intro{
+    background: whitesmoke;
+}
+
+h1{
+    padding: 350px;
+    font-family: 'Noto Sans HK', sans-serif;
+    font-size: 50px;
+}
+

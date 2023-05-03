@@ -3,21 +3,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@300;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
     <title>Mark Ponce</title>
 </head>
 <body>
+    <!--Nav Bar-->
     <nav>
-        <h2>Mark Ponce</h2>
+        <div class="nav_list" id="nameNavbar">
+            <!--Nav Web-->
+            <ul class="nav_sublist">
+                <li class="nav_item"><a href="#home" class="nav_link ">Mark Ponce</a></li>
+            </ul>
+            
+            <ul class="nav_sublist">
+                <li class="nav_item"><a href="#home" class="nav_link" aria-label="go to home section">Home</a></li>
+                <li class="nav_item" ><a href="#about" class="nav_link">About</a></li>
+                <li class="nav_item"><a href="#skills" class="nav_link">Skills</a></li>
+                <li class="nav_item"><a href="#portfolio" class="nav_link" aria-label="go to home section">Portfolio</a></li>
+            </ul>
 
-        <ul>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact Me</a></li>
-        </ul>
+            <ul class="nav_sublist">
+                <li class="nav_item"><a href="#contact" class="nav_link_btn nav_web" aria-label="go to home section">Contact Me</a></li>
+            </ul>
+            <!------ NAV MOBILE  ------>
+            <div class="nav_btn_mobile" aria-label="go to nav menu">
+                <div class="menu_btn_line top_line"></div>
+                <div class="menu_btn_line bottom_line"></div>
+            </div>
+
+        </div>
     </nav>
-<!--Introduction Section-->
-    <section>
+<!--Introduction-->
+    <section class="intro">
         <header>
             <h1>Mark Ponce</h1>
             <span>Front-End Developer</span>
