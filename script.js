@@ -13,7 +13,7 @@ document.querySelectorAll(".nav_link").forEach( n => n.addEventListener("click",
 
 //Intro
 
-const greetings = ['Hello there!', 'Welcome!', 'Bienvenido!', 'Hey!', 'Hola!', 'Greetings!', 'Nice to see you!'];
+const greetings = ['Hello there!', 'Welcome!','Hey!', 'Hola!', 'Greetings!', 'You\'ve come to the right place'];
 const randomGreeting = greetings[Math.floor(Math.random() * greetings.length)];
 
 document.getElementById('greeting').innerText = randomGreeting;

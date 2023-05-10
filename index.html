@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@300;400&display=swap" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/5d096e0dda.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Mark Ponce</title>
 </head>
@@ -15,9 +15,9 @@
     <nav>
         <div class="nav_list">
             <!--Nav Web-->
-            <ul class="nav_sublist">
-                <li class="nav_item"><a href="#home" class="nav_link ">Mark Ponce</a></li>
-            </ul>
+            
+                <li class="nav_item"><a href="#home" class="nav_link">Mark Ponce</a></li>
+            
             
             <ul class="nav_sublist">
                 <li class="nav_item"><a href="#home" class="nav_link" aria-label="go to home section">Home</a></li>
@@ -56,100 +56,261 @@
         </div>
     </header>
 
+
 <!--About Me section-->
-    <section>
-        <section>
-            <h2>About Me</h2>
-            <img src="" alt="">
-        </section>
-        <article>
-            <section>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga iure incidunt pariatur praesentium voluptatum. Omnis repudiandae ad id nihil possimus cum dignissimos dicta vitae mollitia!</section>
-            <section>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vero molestiae deserunt quis, dicta debitis!</section>
-        </article>
-    </section>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="port-images/Mark-Ponce-12.jpg" alt="Mark">
+                </div>
+                <div class="about-col-2">
+                    <h2 class="sub-title">About Me</h2>
+                    <p>Hello there! I am a professional longboard skater who has spent the past several years coaching and leading free workshops in the Los Angeles region. As a product development enthusiast, I have employed my prototyping and design skills to assist my sponsors in successfully penetrating the longboard market. My endeavors have been featured in promotional videos and I have competed in both The Netherlands and France. <br> <br>
+                        Following a three-month backpacking trip across Turkey and Europe, I discovered a passion for web development. The limitless potential for creativity and design achievable through coding is remarkable. With a background in photography and music performance, I find that Front End Development is a natural extension of my artistic outlets. My proficiency in software development has bolstered my critical and analytical skills, and I am eagerly anticipating my next project.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--Skills-->
+
+<section id="skills">
+    <div class="container skills">
+        <h2 class="skill-title">Skills & Tools</h2>
+        <!------  DEV TOOLS  ------>
+        <div class="dev_skills">
+            <div class="skill_box round">
+                <i class="fa-brands fa-html5 dev_icon" aria-hidden="true"></i>
+                <p class="skill">HTML</p>
+            </div>
+            <div class="skill_box round">
+                <i class="fa-brands fa-css3-alt dev_icon" aria-hidden="true"></i>
+                <p class="skill">CSS</p>
+            </div>
+            <div class="skill_box round">
+                <i class="fa-brands fa-square-js dev_icon" aria-hidden="true"></i>
+                <p class="skill">Javascript</p>
+            </div>
+            <div class="skill_box round">
+                <i class="fa-brands fa-react dev_icon" aria-hidden="true"></i>
+                <p class="skill">React</p>
+            </div>
+            <div class="skill_box round">
+                <i class="fa-brands fa-git-alt dev_icon" aria-hidden="true"></i>
+                <p class="skill">Git</p>
+            </div>
+            <div class="skill_box round">
+                <i class="fa-brands fa-github dev_icon" aria-hidden="true"></i>
+                <p class="skill">GitHub</p>
+            </div>
+            <div class="skill_box round">
+                <i class="fa-solid fa-window-restore dev_icon" aria-hidden="true"></i>
+                <p class="skil">Web design</p>
+            </div>
+            <div class="skill_box round">
+                <i class="fa-solid fa-terminal dev_icon"aria-hidden="true"></i>
+                <p class="skill">Command line</p>
+            </div>
+        </div>
+        <!------  SOFT SKILLS ------>
+        <div class = "soft_skills">
+            <div class="soft_skill_container">
+                <h3>Time management</h3>
+                <p>I am able to prioritize tasks, meet deadlines, and manage my workload efficiently to stay on track and deliver high-quality work.</p>
+            </div>
+            <div class="soft_skill_container">
+                <h3>Creativity</h3>
+                <p> I come up with creative solutions to problems, find new and innovative ways to present information, and think outside the box to create engaging user experiences.
+                </p>
+            </div>
+            <div class="soft_skill_container">
+                <h3>Problem-solving</h3>
+                <p>I am able to approach problems in a systematic and logical way, and think critically to find solutions. This includes the ability to troubleshoot code, debug errors, and find solutions to technical challenges.</p>
+            </div> 
+        </div>
+    </div>
+</section>
+
 <!--Projects Section-->
-    <section>
-        <div class="container projects">
-            <h2>Projects</h2>
-            <!--Project 1-->
+<section id="projects">
+    <div class="container projects">
+        <h2>Projects</h2>
+        <div class="projects_container">
+            <!------ PROJECT 1 
             <div class="project">
-                <img src="" alt="">
-                <div class="project_description">
-                    <h3>Title</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit tempora cupiditate quo nemo, aliquam et quae harum nulla tenetur eum.</p>
-                    <div class="links">
-                        <a href="#">GitHub</a>
-                        <a href="#">See Live</a>
+                <div class="project_img">
+                    <img src="">
+                </div>
+                <div class="project_decription">
+                    <h3>[Placeholder]</h3>
+                    <p>This project showcases my skills and experience in creating beautiful, responsive, and user-friendly websites using the latest front-end technologies</p>
+                    <div class="project_links">
+                        <a href="#" class="btn" target="_blank" aria-label="go to the Github repository of xxx">Github<i class="fa-solid fa-up-right-from-square" aria-hidden ="true"></i></a>
+                        <a href="#" class="btn" target="_blank" aria-label="go to the website of xxx">See Live<i class="fa-solid fa-up-right-from-square" aria-hidden ="true"></i></a>
                     </div>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                    <ul class ="project_tools">
+                        <li><i class="fa-brands fa-html5 project_tool" aria-hidden="true"></i></li>
+                        <li><i class="fa-brands fa-css3-alt project_tool" aria-hidden="true"></i></li>
+                        <li><i class="fa-brands fa-square-js project_tool" aria-hidden="true"></i></li>
                     </ul>
                 </div>
-            </div>
-            <!--Project 2-->
+            </div>  ------>
+            <!------ PROJECT 2 
             <div class="project">
-                <img src="" alt="">
-                <div class="project_description">
-                    <h3>Title</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit tempora cupiditate quo nemo, aliquam et quae harum nulla tenetur eum.</p>
-                    <div class="links">
-                        <a href="#">GitHub</a>
-                        <a href="#">See Live</a>
-                    </div>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                <div class="project_img">
+                    <img src="">
+                </div>
+                <div class="project_decription">
+                    <h3>[Placeholder]</h3>
+                    <p>brief description of my projects Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis est quod delectus. Praesentium iste ipsum eos saepe aut pariatur officiis natus amet. Excepturi id placeat delectus corrupti nostrum, et quam.</p>
+                    <div class="project_links">
+                        <a href="#" class="btn" target="_blank" aria-label="go to the Github repository of xxx">Github<i class="fa-solid fa-up-right-from-square" aria-hidden ="true"></i></a>
+                        <a href="#" class="btn" target="_blank" aria-label="go to the website of xxx">See Live<i class="fa-solid fa-up-right-from-square" aria-hidden ="true"></i></a>
+                        </div>
+                    <ul class ="project_tools">
+                        <li><i class="fa-brands fa-html5 project_tool" aria-hidden="true"></i></li>
+                        <li><i class="fa-brands fa-css3-alt project_tool" aria-hidden="true"></i></li>
+                        <li><i class="fa-brands fa-square-js project_tool" aria-hidden="true"></i></li>
                     </ul>
                 </div>
-            </div>
-            <!--Project 3-->
+            </div> ------>
+            <!------ PROJECT 3
             <div class="project">
-                <img src="" alt="">
-                <div class="project_description">
-                    <h3>Title</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit tempora cupiditate quo nemo, aliquam et quae harum nulla tenetur eum.</p>
-                    <div class="links">
-                        <a href="#">GitHub</a>
-                        <a href="#">See Live</a>
+                <div class="project_img">
+                    <img src="">
+                </div>
+                <div class="project_decription">
+                    <h3>[Placeholder]</h3>
+                    <p>brief description of my projects Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ex illum perspiciatis cupiditate, velit, error itaque quae reiciendis magni non amet impedit dolorum tempora eaque laboriosam molestiae natus neque nisi.</p>
+                    <div class="project_links">
+                        <a href="#" class="btn" target="_blank" aria-label="go to the Github repository of xxx">Github<i class="fa-solid fa-up-right-from-square" aria-hidden ="true"></i></a>
+                        <a href="#" class="btn" target="_blank" aria-label="go to the website of xxx">See Live<i class="fa-solid fa-up-right-from-square" aria-hidden ="true"></i></a>
                     </div>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                <ul class ="project_tools">
+                    <li><i class="fa-brands fa-html5 project_tool" aria-hidden="true"></i></li>
+                    <li><i class="fa-brands fa-css3-alt project_tool" aria-hidden="true"></i></li>
+                    <li><i class="fa-brands fa-square-js project_tool" aria-hidden="true"></i></li>
+                </ul>
+                </div>
+            </div>  ------>
+            <!------ PROJECT 4
+            <div class="project">
+                <div class="project_img">
+                    <img src="">
+                </div>
+                <div class="project_decription">
+                    <h3>[Placeholder]</h3>
+                    <p>This project showcases my skills and experience in creating beautiful, responsive, and user-friendly websites using the latest front-end technologies</p>
+                    <div class="project_links">
+                        <a href="#" class="btn" target="_blank" aria-label="go to the Github repository of xxx">Github<i class="fa-solid fa-up-right-from-square" aria-hidden ="true"></i></a>
+                        <a href="#" class="btn" target="_blank" aria-label="go to the website of xxx">See Live<i class="fa-solid fa-up-right-from-square" aria-hidden ="true"></i></a>
+                    </div>
+                    <ul class ="project_tools">
+                        <li><i class="fa-brands fa-html5 project_tool" aria-hidden="true"></i></li>
+                        <li><i class="fa-brands fa-css3-alt project_tool" aria-hidden="true"></i></li>
+                        <li><i class="fa-brands fa-square-js project_tool" aria-hidden="true"></i></li>
+                    </ul>
+                </div>
+            </div>  ------>
+            <!------ PROJECT 5
+            <div class="project">
+                <div class="project_img">
+                    <img src="">
+                </div>
+                <div class="project_decription">
+                    <h3>[Placeholder]</h3>
+                    <p>This project showcases my skills and experience in creating beautiful, responsive, and user-friendly websites using the latest front-end technologies</p>
+                    <div class="project_links">
+                        <a href="#" class="btn" target="_blank" aria-label="go to the Github repository of xxx">Github<i class="fa-solid fa-up-right-from-square" aria-hidden ="true"></i></a>
+                        <a href="#" class="btn" target="_blank" aria-label="go to the website of xxx">See Live<i class="fa-solid fa-up-right-from-square" aria-hidden ="true"></i></a>
+                    </div>
+                    <ul class ="project_tools">
+                        <li><i class="fa-brands fa-html5 project_tool" aria-hidden="true"></i></li>
+                        <li><i class="fa-brands fa-css3-alt project_tool" aria-hidden="true"></i></li>
+                        <li><i class="fa-brands fa-square-js project_tool" aria-hidden="true"></i></li>
+                    </ul>
+                </div>
+            </div>  ------>
+            <!------ PROJECT 6 --->
+           
+            <div class="project">
+                <div class="project_img">
+                    <img src="port-images/Image 5-7-23 at 10.25 AM.jpg">
+                </div>
+                <div class="project_decription">
+                    <h3>Fortune Cookie Game</h3>
+                    <p>Fortune Cookie game built with HTML, CSS, and JavaScript. With a simple click of a button, users can reveal a hidden fortune inside an animated cookie. Clicking again restarts the cookie for a brand new fortune, ensuring a unique experience each time.</p>
+                    <div class="project_links">
+                        <a href="https://github.com/marrkponce/fortune-Cookie.github.io" class="btn" target="_blank" aria-label="go to the Github repository of Mark's Forutne Cookie Game">Github<i class="fa-solid fa-up-right-from-square" aria-hidden ="true"></i></a>
+                        <a href="https://marrkponce.github.io/fortune-Cookie.github.io/" class="btn"  aria-label="go to the website of Susana's personal portfolio website">See Live<i class="fa-solid fa-up-right-from-square" aria-hidden ="true"></i></a>
+                        </div>
+                    <ul class ="project_tools">
+                        <li><i class="fa-brands fa-html5 project_tool" aria-hidden="true"></i></li>
+                        <li><i class="fa-brands fa-css3-alt project_tool" aria-hidden="true"></i></li>
+                        <li><i class="fa-brands fa-square-js project_tool" aria-hidden="true"></i></li>
                     </ul>
                 </div>
             </div>
         </div>
-    </section>
-    <!--Contact Me-->
-    <section>
-        <div class="container content">
-            <h2>Contact Me</h2>
-            <!--Email Form-->
-            <div class="form_content">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, fugit?</p>
-                <form action="">
+    </div>
 
-                </form>
-            </div>
-            <!--Social Media Links-->
-            <div class="social_content">
-                <p>Check out my socials</p>
-                <ul>
-                    <li><a href="#"></a>GitHub</li>
-                    <li><a href="#"></a>LinkedIn</li>
-                    <li><a href="#"></a>Twitter</li>
-                </ul>
-            </div>
+    <!--Contact Me-->
+        <section id="contact">
+            <div class="container contact">
+                <h2>Contact</h2>
+                <h3>Let's connect!</h3>
+                <div class="contact_content">
+                    <!------ EMAIL FORM ------>
+                    <div class="form_content">
+                        <p>Drop me a message using the form below, and let's connect!</p>
+                        <form action="https://formspree.io/f/xjvdzbob" method="POST">
+                            <div class="field">
+                                <label for="name">Name<span class="required"></span></label>  
+                                <input type="text" name="name" id="name" required="required" placeholder="Full Name">
+                            </div>
+                            <div class="field">
+                                <label for="email">Email<span class="required"></span></label>
+                                <input type="email" name="_replyto" id="email" required="required" placeholder="hello@world.com">
+                            </div>
+                            <div class="field">
+                                <label for="message" class="message">Message<span class="required"></span></label>
+                                <textarea type="textbox" name="message" id="message" required="required" placeholder="Enter Message"></textarea>
+                            </div>
+                            <span class="btn yellow" value="send">
+                            <span>Send email</span>
+                            <i class="far fa-envelope-open" aria-hidden="true"></i>
+                            </span>
+                        </form>
+                    </div> 
+                <!------ SOCIAL MEDIA LINKS ------>
+                    <div class="social_content">
+                    <h4>Let's Get Social</h4>
+                    <p>Check me out on these social platforms!</p>
+                    <ul class="social_links">
+                        <li>
+                            <a href="https://github.com/marrkponce" target="_blank" aria-label="open link to Mark's github page."><i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/marrkponce" target="_blank" aria-label="open link to Mark's Twitter page."><i class="fab fa-twitter" aria-hidden="true"></i><span class="visually-hidden">CodePen</span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/mark-ponce97/" target="_blank" aria-label="open link to Mark's linkedin page."><i class="fa-brands fa-linkedin" aria-hidden="true"></i><span class="visually-hidden">linkedin</span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/marrkponce/" target="_blank" aria-label="open link to Mark's instagram page."><i class="fab fa-instagram" aria-hidden="true"></i><span class="visually-hidden">Instagram</span></a>
+                        </li>
+                    </ul>
+                    </div> 
+                </div> 
         </div>
     </section>
     <!--Footer-->
     <footer>
-        <p>C 2023 Mark Ponce</p>
+        <p>© 2023 | Mark Ponce</p>
     </footer>
+
     <!--Javascript-->
     <script src="script.js"></script>
 </body>
